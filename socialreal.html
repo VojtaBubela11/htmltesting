@@ -28,13 +28,30 @@ p {
 text-align: center; /* added this line to center the "Hello" text */
 }
 
-.button {
-background-color: cyan; /* set the button background color to cyan */
+.youtube-button {
+background-color: #ffffff; /* white background color */
 border: none;
-border-radius: 20px; /* add a rounded corner effect */
+border-radius: 20px; /* rounded corner effect */
 padding: 10px 20px; /* add some padding to the button */
 cursor: pointer; /* change the cursor to a pointer when hovering over the button */
-color: #ffffff; /* set the text color to white */
+}
+
+.youtube-button:hover {
+background-color: #cccccc; /* gray background color on hover */
+}
+
+.youtube-button span {
+color: #ff0000; /* red text color */
+font-size: 1.2em; /* slightly larger font size */
+}
+
+.youtube-icon {
+display: inline-block; /* display the icon inline with the text */
+width: 24px; /* set the icon width */
+height: 24px; /* set the icon height */
+background-image: url('https://cdn-icons-png.flaticon.com/512/1384/1384063.png'); /* YouTube icon URL */
+background-size: cover; /* cover the entire icon area with the image */
+margin-right: 10px; /* add some space between the icon and text */
 }
 
 .button:hover {
@@ -45,6 +62,13 @@ background-color: #00cccc; /* set the hover background color to a darker shade o
 <body>
 <h1>SOCIALS</h1>
 <p>Choose any social name button so you can go inside it.</p>
+<a href="https://vojtabubela11.github.io/htmltesting/socialreal">
 <button class="button">SOCIALS</button>
+</a>
+<a href="https://www.youtube.com/@VojtaBubela11">
+<button class="youtube-button">
+<span class="youtube-icon"></span>YouTube
+</button>
+</a>
 </body>
 </html>
